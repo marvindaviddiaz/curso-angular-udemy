@@ -5,14 +5,16 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { OtroComponent } from './otro/otro.component';
-import { InterpolationComponent } from './interpolation/interpolation.component';
-import { CustomPropertiesComponent } from './custom-properties/custom-properties.component';
+import { InterpolationComponent } from './bindings/interpolation.component';
+import { PropertyBindingComponent } from './bindings/property-binding.component';
+import { CustomPropertiesComponent } from './bindings/custom-properties.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OtroComponent,
     InterpolationComponent,
+    PropertyBindingComponent,    
     CustomPropertiesComponent
   ],
   imports: [
