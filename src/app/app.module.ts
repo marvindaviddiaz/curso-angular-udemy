@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { OtroComponent } from './otro/otro.component';
+import { InterpolationComponent } from './interpolation/interpolation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OtroComponent
+    OtroComponent,
+    InterpolationComponent
   ],
   imports: [
     BrowserModule,
