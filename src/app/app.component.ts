@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Curso de Angular Udemy!';
+
+  //Viene de Custom Events
+  methodInAppComponent(recibido:string){
+  	alert(recibido);
+  }
 }

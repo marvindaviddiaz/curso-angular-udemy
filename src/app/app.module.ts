@@ -9,6 +9,7 @@ import { InterpolationComponent } from './bindings/interpolation.component';
 import { PropertyBindingComponent } from './bindings/property-binding.component';
 import { CustomPropertiesComponent } from './bindings/custom-properties.component';
 import { EventBindingComponent } from './bindings/event-binding.component';
+import { CustomEventsComponent } from './bindings/custom-events.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { EventBindingComponent } from './bindings/event-binding.component';
     OtroComponent,
     InterpolationComponent,
     PropertyBindingComponent,    
-    CustomPropertiesComponent, EventBindingComponent
+    CustomPropertiesComponent, EventBindingComponent, CustomEventsComponent
   ],
   imports: [
     BrowserModule,
