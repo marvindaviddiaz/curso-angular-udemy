@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { OtroComponent } from './otro/otro.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
+import { CustomPropertiesComponent } from './custom-properties/custom-properties.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OtroComponent,
-    InterpolationComponent
+    InterpolationComponent,
+    CustomPropertiesComponent
   ],
   imports: [
     BrowserModule,
