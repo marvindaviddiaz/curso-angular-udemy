@@ -10,6 +10,7 @@ import { PropertyBindingComponent } from './bindings/property-binding.component'
 import { CustomPropertiesComponent } from './bindings/custom-properties.component';
 import { EventBindingComponent } from './bindings/event-binding.component';
 import { CustomEventsComponent } from './bindings/custom-events.component';
+import { TwoWayBindingComponent } from './bindings/two-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { CustomEventsComponent } from './bindings/custom-events.component';
     OtroComponent,
     InterpolationComponent,
     PropertyBindingComponent,    
-    CustomPropertiesComponent, EventBindingComponent, CustomEventsComponent
+    CustomPropertiesComponent, EventBindingComponent, CustomEventsComponent, TwoWayBindingComponent
   ],
   imports: [
     BrowserModule,
