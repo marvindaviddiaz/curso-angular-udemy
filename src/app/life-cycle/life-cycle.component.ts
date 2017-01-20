@@ -8,7 +8,7 @@ import {
   AfterViewInit,
   AfterViewChecked,
   OnDestroy,
-  ViewChild
+  ViewChild, ContentChild
 } from '@angular/core';
 
 @Component({
@@ -20,6 +20,8 @@ import {
   styles: []
 })
 export class LifeCycleComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
+
+  //@ContentChild // Se usa cuando se hace un binding de un contenedor
 
   @ViewChild('bindingParrafo')
   bindingParrafo: HTMLElement;
