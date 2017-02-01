@@ -1,15 +1,27 @@
-import { Directive, ElementRef, Renderer } from '@angular/core';
+import { Directive, HostListener, HostBinding } from '@angular/core';
 
 @Directive({
   selector: '[appHighlight]'
 })
 export class HighlightDirective {
   
-  constructor(private elementRef: ElementRef, private renderer: Renderer) {
-    //this.elementRef.nativeElement.style.backgroundColor = 'green';
-    this.renderer.setElementStyle(this.elementRef.nativeElement, 'background-color', 'green');
-    
-    // La linea comentada no es muy compatible con ciertos navegadores
+  private colorFondo = 'white';
+  
+  @HostListener('mouseenter') mouseEncima(){
+    this.colorFondo = 'green';
+  };
+  @HostListener('mouseleave') mouseFuera(){
+    this.colorFondo = 'white';
+  };
+  
+  @HostBinding('style.backgroundColor') get setColor(){
+    return this.colorFondo;
+  }
+  
+  constructor() {
+//    this.elementRef.nativeElement.style.backgroundColor = 'green';
+//    this.renderer.setElementStyle(this.elementRef.nativeElement, 'background-color', 'green');
+//    La primera linea no es muy compatible con ciertos navegadores
   }
 
 }
