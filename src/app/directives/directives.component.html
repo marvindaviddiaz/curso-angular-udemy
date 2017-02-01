@@ -12,3 +12,16 @@
 <h3>Directives: Custom Directives</h3>
 
 <div appHighlight>Mouse Over</div>
+<div appHighlight [highlightColor]="'blue'" [defaultColor]="'red'">Mouse Over</div>
+
+
+<h3>Directives: Structural Directives *ngIf </h3>
+
+<div *ngIf="switch">ConditionalText</div>
+<button (click)="onSwitch()">Switch</button> 
+
+
+<h3>Directives: Structural Directives *ngFor </h3>
+<ul>
+	<li *ngFor="let item of items; let i = index">{{item}} - (Index: {{i}})</li>
+</ul>
