@@ -12,6 +12,7 @@ import { EventBindingComponent } from './bindings/event-binding.component';
 import { CustomEventsComponent } from './bindings/custom-events.component';
 import { TwoWayBindingComponent } from './bindings/two-way-binding.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { LifeCycleComponent } from './life-cycle/life-cycle.component';
     OtroComponent,
     InterpolationComponent,
     PropertyBindingComponent,    
-    CustomPropertiesComponent, EventBindingComponent, CustomEventsComponent, TwoWayBindingComponent, LifeCycleComponent
+    CustomPropertiesComponent, EventBindingComponent, CustomEventsComponent, TwoWayBindingComponent, LifeCycleComponent, DirectivesComponent
   ],
   imports: [
     BrowserModule,
