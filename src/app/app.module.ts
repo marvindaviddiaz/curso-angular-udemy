@@ -14,6 +14,7 @@ import { TwoWayBindingComponent } from './bindings/two-way-binding.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { HighlightDirective } from './directives/highlight.directive';
+import { UnlessDirective } from './directives/unless.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { HighlightDirective } from './directives/highlight.directive';
     OtroComponent,
     InterpolationComponent,
     PropertyBindingComponent,    
-    CustomPropertiesComponent, EventBindingComponent, CustomEventsComponent, TwoWayBindingComponent, LifeCycleComponent, DirectivesComponent, HighlightDirective
+    CustomPropertiesComponent, EventBindingComponent, CustomEventsComponent, TwoWayBindingComponent, LifeCycleComponent, DirectivesComponent, HighlightDirective, UnlessDirective
   ],
   imports: [
     BrowserModule,
