@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { routing } from './app.routing';
 import { OtroComponent } from './otro/otro.component';
 import { InterpolationComponent } from './bindings/interpolation.component';
 import { PropertyBindingComponent } from './bindings/property-binding.component';
@@ -18,20 +19,40 @@ import { UnlessDirective } from './directives/unless.directive';
 import { ServiceComponent } from './services/service.component';
 import { CmpAComponent } from './services/cmp-a.component';
 import { CmpBComponent } from './services/cmp-b.component';
-import { LogService } from './services/log.service'
+import { LogService } from './services/log.service';
+import { HomeComponent } from './home-component.component';
+import { UserComponent } from './user/user.component';
+import { UserDetailComponent } from './user/user-detail.component';
+import { UserEditComponent } from './user/user-edit.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     OtroComponent,
     InterpolationComponent,
-    PropertyBindingComponent,    
-    CustomPropertiesComponent, EventBindingComponent, CustomEventsComponent, TwoWayBindingComponent, LifeCycleComponent, DirectivesComponent, HighlightDirective, UnlessDirective, ServiceComponent, CmpAComponent, CmpBComponent 
+    PropertyBindingComponent,
+    CustomPropertiesComponent,
+    EventBindingComponent,
+    CustomEventsComponent,
+    TwoWayBindingComponent,
+    LifeCycleComponent,
+    DirectivesComponent,
+    HighlightDirective,
+    UnlessDirective,
+    ServiceComponent,
+    CmpAComponent,
+    CmpBComponent,
+    HomeComponent,
+    UserComponent,
+    UserDetailComponent,
+    UserEditComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [LogService],
   bootstrap: [AppComponent]
