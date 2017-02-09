@@ -7,20 +7,19 @@ import { Subscription } from 'rxjs';
   template: `
       <h1>User Component</h1>
       <button (click)="onNavigate()">Go Home</button> 
-
-      {{id}}
+      
+      ID: {{id}}
     `
 })
 export class UserComponent implements OnDestroy {
-  
+
   private subscription: Subscription;
-  
+
   id: string;
-  
-  constructor(private router: Router, private activatedRoute: ActivatedRoute){
+
+  constructor(private router: Router, private activatedRoute: ActivatedRoute) {
     //Once when component is created
-//    this.id = activatedRoute.snapshot.params['id']; 
-    
+    //    this.id = activatedRoute.snapshot.params['id'    
     // subscribe pattern
     this.subscription = activatedRoute.params.subscribe(
       (param: any) => {
@@ -28,13 +27,13 @@ export class UserComponent implements OnDestroy {
       }
     );
   }
-  
-  onNavigate(){
-    this.router.navigate(['/']);
+
+  onNavigate() {
+    this.router.navigate(['/'], { queryParams: { "analytics": 100 } });
   }
-  
-  ngOnDestroy(){
+
+  ngOnDestroy() {
     this.subscription.unsubscribe();
   }
-  
+
 }
