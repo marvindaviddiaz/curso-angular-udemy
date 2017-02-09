@@ -2,11 +2,15 @@
   {{title}}
 </h1>
 
+<hr>
+
 <h1>Components</h1>
 
 <app-otro>Primera utilización</app-otro>
 
 <app-otro>Segunda utilización</app-otro>
+
+<hr>
 
 <h1>Bindings</h1>
 
@@ -26,15 +30,18 @@
 
 <app-directives></app-directives>
 
+<hr>
+
 <si-service></si-service>
+
+<hr>
 
 <h1>Routing</h1>
 
-<hr>
+
 	<a [routerLink]="['']" [queryParams]="{analytics: 500}">Home</a> | 
 	<input type="text" #id (input)="0">
 	<a [routerLink]="['user', id.value]" [preserveQueryParams]="true" >User</a>
-<hr>
 
 <router-outlet></router-outlet>
 
