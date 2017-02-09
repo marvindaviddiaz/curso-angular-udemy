@@ -6,6 +6,11 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+  styles: [`
+    .active {
+      border: solid 1px green;
+    }
+  `]
 })
 export class AppComponent {
   title = 'Curso de Angular Udemy!';
