@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const APP_ROUTES: Routes = [
   { path: 'user', component: UserComponent },
-  { path: 'home', component: HomeComponent }
+  { path: '', component: HomeComponent }
 ];
 
 export const routing = RouterModule.forRoot(APP_ROUTES);
