@@ -9,6 +9,9 @@ import { Subscription } from 'rxjs';
       <button (click)="onNavigate()">Go Home</button> 
       
       ID: {{id}}
+
+      <router-outlet> </router-outlet>
+      
     `
 })
 export class UserComponent implements OnDestroy {
