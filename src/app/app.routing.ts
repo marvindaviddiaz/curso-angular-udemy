@@ -4,7 +4,7 @@ import { UserComponent } from './user/user.component';
 import { Routes, RouterModule } from '@angular/router';
 
 const APP_ROUTES: Routes = [
-  { path: 'user', component: UserComponent },
+  { path: 'user/:id', component: UserComponent },
   { path: '', component: HomeComponent }
 ];
 
