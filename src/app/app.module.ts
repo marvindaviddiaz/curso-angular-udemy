@@ -23,7 +23,9 @@ import { LogService } from './services/log.service';
 import { HomeComponent } from './home-component.component';
 import { UserComponent } from './user/user.component';
 import { UserDetailComponent } from './user/user-detail.component';
+import { UserDetailGuard } from './user/user-detail.guard';
 import { UserEditComponent } from './user/user-edit.component';
+import { UserEditGuard } from './user/user-edit.guard'
 
 
 @NgModule({
@@ -54,7 +56,7 @@ import { UserEditComponent } from './user/user-edit.component';
     HttpModule,
     routing
   ],
-  providers: [LogService],
+  providers: [LogService, UserDetailGuard, UserEditGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -8,8 +8,13 @@ import { Subscription } from 'rxjs';
       <h1>User Component</h1>
       <button (click)="onNavigate()">Go Home</button> 
       
+      <br>
+      <a [routerLink]="['/user/2/detail']" routerLinkActive="active">Navigate to User Detail Number Two</a>
+      <br>
+      <a [routerLink]="['/user/2/edit']" routerLinkActive="active">Navigate to User Edit Number Two</a>
+      <br>
       ID: {{id}}
-
+      <br>
       <router-outlet> </router-outlet>
       
     `
