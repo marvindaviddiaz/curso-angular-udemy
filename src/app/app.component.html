@@ -1,6 +1,4 @@
-<h1>
-  {{title}}
-</h1>
+<h1>{{title}}</h1>
 
 <hr>
 
@@ -22,7 +20,8 @@
 
 <app-event-binding> Loading...</app-event-binding>
 
-<app-custom-events (presionado)="methodInAppComponent($event)"> Loading...</app-custom-events>
+<app-custom-events (presionado)="methodInAppComponent($event)">
+Loading...</app-custom-events>
 
 <app-two-way-binding>Loading...</app-two-way-binding>
 
@@ -39,11 +38,38 @@
 <h1>Routing</h1>
 
 <div routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-	<a [routerLink]="['']" [queryParams]="{analytics: 500}" >Home</a>
+	<a [routerLink]="['']" [queryParams]="{analytics: 500}">Home</a>
 </div>
 
 <input type="text" #id (input)="0">
-<a [routerLink]="['user', id.value]" [preserveQueryParams]="true" routerLinkActive="active">User</a>
+<a [routerLink]="['user', id.value]" [preserveQueryParams]="true"
+	routerLinkActive="active">User</a>
 
 <router-outlet></router-outlet>
 
+<hr>
+
+<h1>Forms</h1>
+
+<template-driven></template-driven>
+
+
+<hr>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

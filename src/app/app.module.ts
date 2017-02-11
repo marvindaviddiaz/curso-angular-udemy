@@ -25,7 +25,9 @@ import { UserComponent } from './user/user.component';
 import { UserDetailComponent } from './user/user-detail.component';
 import { UserDetailGuard } from './user/user-detail.guard';
 import { UserEditComponent } from './user/user-edit.component';
-import { UserEditGuard } from './user/user-edit.guard'
+import { UserEditGuard } from './user/user-edit.guard';
+import { DataDrivenComponent } from './data-driven/data-driven.component';
+import { TemplateDrivenComponent } from './template-driven/template-driven.component';
 
 
 @NgModule({
@@ -49,6 +51,8 @@ import { UserEditGuard } from './user/user-edit.guard'
     UserComponent,
     UserDetailComponent,
     UserEditComponent,
+    DataDrivenComponent,
+    TemplateDrivenComponent
   ],
   imports: [
     BrowserModule,
