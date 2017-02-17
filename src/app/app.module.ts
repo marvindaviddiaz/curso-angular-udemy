@@ -28,6 +28,9 @@ import { UserEditComponent } from './user/user-edit.component';
 import { UserEditGuard } from './user/user-edit.guard';
 import { DataDrivenComponent } from './data-driven/data-driven.component';
 import { TemplateDrivenComponent } from './template-driven/template-driven.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { DoublePipe } from './pipes/double.pipe';
+import { FilterPipe } from './pipes/filter.pipe';
 
 
 @NgModule({
@@ -52,7 +55,10 @@ import { TemplateDrivenComponent } from './template-driven/template-driven.compo
     UserDetailComponent,
     UserEditComponent,
     DataDrivenComponent,
-    TemplateDrivenComponent
+    TemplateDrivenComponent,
+    PipesComponent,
+    DoublePipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
