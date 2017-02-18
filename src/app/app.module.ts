@@ -27,10 +27,12 @@ import { UserDetailGuard } from './user/user-detail.guard';
 import { UserEditComponent } from './user/user-edit.component';
 import { UserEditGuard } from './user/user-edit.guard';
 import { DataDrivenComponent } from './data-driven/data-driven.component';
+import { HttpFirebaseService } from './http/http-firebase.service'
 import { TemplateDrivenComponent } from './template-driven/template-driven.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { DoublePipe } from './pipes/double.pipe';
 import { FilterPipe } from './pipes/filter.pipe';
+import { HttpComponent } from './http/http.component';
 
 
 @NgModule({
@@ -58,7 +60,8 @@ import { FilterPipe } from './pipes/filter.pipe';
     TemplateDrivenComponent,
     PipesComponent,
     DoublePipe,
-    FilterPipe
+    FilterPipe,
+    HttpComponent
   ],
   imports: [
     BrowserModule,
@@ -67,7 +70,7 @@ import { FilterPipe } from './pipes/filter.pipe';
     routing,
     ReactiveFormsModule
   ],
-  providers: [LogService, UserDetailGuard, UserEditGuard],
+  providers: [LogService, UserDetailGuard, UserEditGuard, HttpFirebaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
